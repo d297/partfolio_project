@@ -1,0 +1,17 @@
+.about {
+  background: $backgroundColor;
+  .wrapper {
+    @extend %flexCenter;
+  }
+
+  padding: 3rem 0 4.7rem;
+  &__title {
+    margin-bottom: 1.7rem;
+  }
+  p {
+    width: 48.8rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+}

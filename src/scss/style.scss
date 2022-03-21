@@ -1,0 +1,50 @@
+@import "./normalize";
+@import "./variables";
+@import "./mixins";
+@import "./header";
+@import "./main/about";
+@import "./main/skills";
+@import "./main/portfolio";
+@import "./main/contacts";
+
+html {
+  font-size: 10px;
+  //font-family: "Roboto", sans-serif;
+  font-family: "Smooch Sans", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 940.6px;
+
+  margin: 0 auto;
+  @include respondTo(900px, 1020px) {
+    padding: 0 3rem;
+    color: red;
+    width: 100%;
+  }
+  @include respondTo(600px, 899px) {
+    color: green;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $light;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.link.active,
+.link:hover {
+  color: $black;
+}
+.title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+span {
+  display: block;
+}

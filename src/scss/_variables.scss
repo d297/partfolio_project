@@ -1,0 +1,16 @@
+$backgroundColor: #f6f6f6;
+
+$light: #828282;
+$black: #070707;
+
+%flexSB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+%flexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
