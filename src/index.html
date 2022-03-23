@@ -16,28 +16,30 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <nav class="menu" id="menu">
+      <div class="wrapper">
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a href="#menu" class="link menu__item-link active">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#about" class="link menu__item-link">About me</a>
+          </li>
+          <li class="menu__item">
+            <a href="#skills" class="link menu__item-link">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a href="#portfolio" class="link menu__item-link">Portfolio</a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" class="link menu__item-link">Contacts</a>
+          </li>
+        </ul>
+        <div class="divider"></div>
+      </div>
+    </nav>
     <header>
       <div class="wrapper">
-        <nav class="menu">
-          <ul class="menu__items">
-            <li class="menu__item">
-              <a href="#" class="link menu__item-link active">Home</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="link menu__item-link">About me</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="link menu__item-link">Skills</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="link menu__item-link">Portfolio</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="link menu__item-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="divider"></div>
         <div class="promo">
           <div class="promo__text">
             <div class="promo__text-logo">Dmitry <br />Kostenko</div>
@@ -59,7 +61,7 @@
     <main>
       <div class="about">
         <div class="wrapper">
-          <h2 class="title about__title">About me</h2>
+          <h2 class="title about__title" id="about">About me</h2>
           <p>
             Hi, I'm Dmitriy - a web developer from Novosibirsk. <span></span> I
             am interested in web development and everything connected with it.
@@ -76,7 +78,7 @@
       </div>
       <div class="skills">
         <div class="wrapper">
-          <h2 class="title skills__title">Skills</h2>
+          <h2 class="title skills__title" id="skills">Skills</h2>
           <div class="skills__content">
             <div class="skills__text">What I use for work</div>
             <div class="skills__items">
@@ -157,7 +159,7 @@
           </div>
         </div>
       </div>
-      <div class="portfolio">
+      <div class="portfolio" id="portfolio">
         <div class="wrapper">
           <h2 class="title portfolio__title">Portfolio</h2>
           <div class="portfolio__items">
@@ -188,7 +190,7 @@
           </div>
         </div>
       </div>
-      <div class="contacts">
+      <div class="contacts" id="contacts">
         <div class="wrapper">
           <h2 class="title contacts__title">Contacts</h2>
           <h3 class="subtitle contacts_subtitle">
@@ -220,5 +222,6 @@
         </div>
       </div>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>

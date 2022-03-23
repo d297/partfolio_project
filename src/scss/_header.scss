@@ -1,21 +1,25 @@
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  &__items {
+    @extend %flexSB;
+    list-style-type: none;
+  }
+  &__item {
+    &-link {
+      display: block;
+      padding: 2rem 0;
+    }
+  }
+}
+.divider {
+  border: 1px solid $light;
+}
 header {
-  @include respondTo() {
-  }
-  .menu {
-    &__items {
-      @extend %flexSB;
-      list-style-type: none;
-    }
-    &__item {
-      &-link {
-        display: block;
-        padding: 20px 0;
-      }
-    }
-  }
-  .divider {
-    border: 1px solid $light;
-  }
+  margin-top: 6.3rem;
+
   .promo {
     &__text {
       @extend %flexSB;
